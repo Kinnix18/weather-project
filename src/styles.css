@@ -1,0 +1,106 @@
+body {
+  color: #646b7d;
+  font-family: "Open Sans", sans-serif;
+}
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.question {
+  width: 70%;
+  background: rgb(243, 194, 121);
+  border: 1px;
+}
+.question:hover {
+  background: #f17972;
+}
+.search-button {
+  width: 30%;
+  background: #453e94;
+  color: white;
+  border: 1px;
+}
+.search-button:hover {
+  background: #f17972;
+}
+button {
+  background: #453e94;
+  color: white;
+  display: block;
+  margin-left: 318px;
+  margin-top: -15px;
+  border: 1px;
+}
+button:hover {
+  background: #f17972;
+}
+.temperature {
+  display: flex;
+}
+.cloud-icon {
+  font-size: 45px;
+  color: rgb(91, 91, 209);
+  padding: 15px;
+}
+
+h1 {
+  font-size: 48px;
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.line,
+.not-active {
+  font-size: 24px;
+  line-height: 37px;
+}
+h1 > span {
+  order: 0;
+}
+
+.line {
+  order: 3;
+}
+
+.not-active {
+  order: 4;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 20px;
+}
+.card > hr {
+  margin: 50px 20px 15px 20px;
+  border-top: 2px solid;
+  color: #5a6275;
+  opacity: 1;
+}
+.card {
+  padding: 10px 20px 20px 20px;
+  width: 500px;
+  border: solid 3px;
+  border-radius: 0px;
+}
+
+.sun-icon {
+  color: rgba(212, 212, 8, 0.63);
+}
+.next-week {
+  text-align: center;
+}
+h4 {
+  font-size: 20px;
+}
+.day-temperature {
+  font-weight: bold;
+}
+h5 {
+  font-size: 16px;
+}
