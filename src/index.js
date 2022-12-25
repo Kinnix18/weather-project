@@ -25,6 +25,9 @@ let days = [
 ];
 let day = days[time.getDay()];
 
+let h4 = document.querySelector("h4");
+let h5 = document.querySelector("h5");
+
 if (hours < 10) {
   hours = `0${hours}`;
 }
