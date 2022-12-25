@@ -26,41 +26,43 @@
 
   <body>
     <div class="container">
-      <div class="card">
-        <form>
-          <input
-            type="text"
-            class="question"
-            placeholder="Your city is..."
-            autofocus="on"
-          />
-          <input type="submit" class="search-button" value="Search" />
-        </form>
-        <div class="row">
-          <div class="temperature col-8">
-            <i class="fa-solid fa-cloud cloud-icon"></i>
-            <h1>
-              <span class="data">11</span>
-              <span class="celsius">°C</span>
-              <span class="line">/</span>
-              <span class="fahrenheit not-active">°F</span>
-            </h1>
-          </div>
-          <div class="current-city col-4">
-            <h2>Lutsk</h2>
-            <h3>
-              Thursday <br />
-              20:20
-            </h3>
+      <div class="weather-wrapper">
+        <div class="card">
+          <form>
+            <input
+              type="text"
+              class="question"
+              placeholder="Your city is..."
+              autofocus="on"
+            />
+            <input type="submit" class="search-button" value="Search" />
+          </form>
+          <div class="row">
+            <div class="temperature col-8">
+              <i class="fa-solid fa-cloud cloud-icon"></i>
+              <h1>
+                <span class="data">11</span>
+                <span class="celsius">°C</span>
+                <span class="line">/</span>
+                <span class="fahrenheit not-active">°F</span>
+              </h1>
+            </div>
+            <div class="current-city col-4">
+              <h2>Lutsk</h2>
+              <h3>
+                Thursday <br />
+                20:20
+              </h3>
+            </div>
           </div>
         </div>
+        <small
+          ><a href="https://github.com/Kinnix18/weather-project" target="_blank"
+            >Open-source code,</a
+          >
+          by Oksana Yanchuk
+        </small>
       </div>
-      <small
-        ><a href="https://github.com/Kinnix18/weather-project" target="_blank"
-          >Open-source code,</a
-        >
-        by Oksana Yanchuk
-      </small>
     </div>
     <script src="src/index.js"></script>
   </body>

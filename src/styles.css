@@ -1,3 +1,7 @@
+.weather-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
 body {
   color: #646b7d;
   font-family: "Open Sans", sans-serif;
