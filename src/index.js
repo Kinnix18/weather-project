@@ -25,8 +25,8 @@ let days = [
 ];
 let day = days[time.getDay()];
 
-let h4 = document.querySelector("h4");
-let h5 = document.querySelector("h5");
+let windSpeedElement = document.querySelector(".wind-speed");
+let descriptionElement = document.querySelector("h5");
 
 if (hours < 10) {
   hours = `0${hours}`;
@@ -35,7 +35,7 @@ if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 
-h3.innerHTML = `${day} <br />
+h3.innerHTML = `${day},
                 ${hours}:${minutes}`;
 
 function showCity(event) {
@@ -74,7 +74,10 @@ function weatherHandlerByCity(city) {
 }
 
 function showTemperature(response) {
+  console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
   h1.innerHTML = `${temperature}°C`;
   h2.innerHTML = response.data.name;
+  windSpeedElement.innerHTML = response.data.wind.speed;
+  descriptionElement.innerHTML = response.data.weather[0].description;
 }
