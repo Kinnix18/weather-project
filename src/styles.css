@@ -32,11 +32,6 @@ form {
 .temperature {
   display: flex;
 }
-.cloud-icon {
-  font-size: 45px;
-  color: rgb(91, 91, 209);
-  padding: 15px;
-}
 
 h1 {
   font-size: 48px;

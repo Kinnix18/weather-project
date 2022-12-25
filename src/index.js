@@ -27,6 +27,7 @@ let day = days[time.getDay()];
 
 let windSpeedElement = document.querySelector(".wind-speed");
 let descriptionElement = document.querySelector("h5");
+let iconElement = document.querySelector("#icon");
 
 if (hours < 10) {
   hours = `0${hours}`;
@@ -80,4 +81,9 @@ function showTemperature(response) {
   h2.innerHTML = response.data.name;
   windSpeedElement.innerHTML = response.data.wind.speed;
   descriptionElement.innerHTML = response.data.weather[0].description;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
