@@ -24,17 +24,7 @@ form {
 .search-button:hover {
   background: #f17972;
 }
-button {
-  background: #453e94;
-  color: white;
-  display: block;
-  margin-left: 318px;
-  margin-top: -15px;
-  border: 1px;
-}
-button:hover {
-  background: #f17972;
-}
+
 .temperature {
   display: flex;
 }
@@ -75,32 +65,4 @@ h2 {
 }
 h3 {
   font-size: 20px;
-}
-.card > hr {
-  margin: 50px 20px 15px 20px;
-  border-top: 2px solid;
-  color: #5a6275;
-  opacity: 1;
-}
-.card {
-  padding: 10px 20px 20px 20px;
-  width: 500px;
-  border: solid 3px;
-  border-radius: 0px;
-}
-
-.sun-icon {
-  color: rgba(212, 212, 8, 0.63);
-}
-.next-week {
-  text-align: center;
-}
-h4 {
-  font-size: 20px;
-}
-.day-temperature {
-  font-weight: bold;
-}
-h5 {
-  font-size: 16px;
 }

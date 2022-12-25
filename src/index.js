@@ -3,8 +3,6 @@ let apiKey = "7ed26a6948c661d05fafe7355b41b2ec";
 let form = document.querySelector("form");
 let input = document.querySelector("input.question");
 
-let button = document.querySelector("button");
-
 let h1 = document.querySelector("h1");
 let h1Data = document.querySelector("h1 .data");
 let h1Celsius = document.querySelector("h1 .celsius");
@@ -77,17 +75,3 @@ function showTemperature(response) {
   h1.innerHTML = `${temperature}°C`;
   h2.innerHTML = response.data.name;
 }
-
-//bonus
-function showCurrentPosition() {
-  navigator.geolocation.getCurrentPosition(weatherHandlerByPosition);
-}
-
-function weatherHandlerByPosition(position) {
-  let long = position.coords.longitude;
-  let lat = position.coords.latitude;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(showTemperature);
-}
-
-button.addEventListener("click", showCurrentPosition);

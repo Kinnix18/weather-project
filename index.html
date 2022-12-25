@@ -16,80 +16,51 @@
     />
     <meta charset="UTF-8" />
     <link href="./src/styles.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <div class="container">
       <div class="card">
-      <form>
-        <input type="text" class="question" placeholder="Your city is..." autofocus="on" />
-        <input type="submit" class="search-button" value="Search" />
-      </form>
-      <button> Current city </button>
-      <div class="row">
-     <div class="temperature col-8">
-        <i class="fa-solid fa-cloud cloud-icon"></i>
-      <h1>
-        <span class="data">11</span>
-        <span class="celsius">°C</span>
-        <span class="line">/</span>
-        <span class="fahrenheit not-active">°F</span>
-      </h1>
-     </div>
-      <div class="current-city col-4">
-        <h2>Lutsk</h2>
-        <h3>
-          Thursday <br />
-          20:20
-        </h3>
+        <form>
+          <input
+            type="text"
+            class="question"
+            placeholder="Your city is..."
+            autofocus="on"
+          />
+          <input type="submit" class="search-button" value="Search" />
+        </form>
+        <div class="row">
+          <div class="temperature col-8">
+            <i class="fa-solid fa-cloud cloud-icon"></i>
+            <h1>
+              <span class="data">11</span>
+              <span class="celsius">°C</span>
+              <span class="line">/</span>
+              <span class="fahrenheit not-active">°F</span>
+            </h1>
+          </div>
+          <div class="current-city col-4">
+            <h2>Lutsk</h2>
+            <h3>
+              Thursday <br />
+              20:20
+            </h3>
+          </div>
         </div>
       </div>
-      <hr />
-      <div class="row next-week">   
-        <div class="col">
-          <h5>Friday</h5>
-          <br/>
-        <h4> 
-      <i class="fa-regular fa-sun sun-icon"></i><span class="day-temperature"> 11°C </span>
-         </br>
-         <i class="fa-solid fa-moon"></i> 7°C 
-        </h4>
-        </div>
-        <div class="col">
-          <h5>Saturday</h5>
-          <br/>
-        <h4> <span class="day-temperature">11°C</span> 
-         </br>
-          6°C </h4>
-        </div>
-        <div class="col">
-        <h5>Sunday</h5>
-          <br/>
-         <h4> <span class="day-temperature">10°C </span>
-         </br>
-          6°C</h4>
-        </div>
-        <div class="col">
-        <h5>Monday</h5>
-          <br/>
-        <h4> 
-          <span class="day-temperature">9°C</span>
-         </br>
-          2°C </h4>
-        </div>
-        <div class="col">
-        <h5>Tuesday</h5>
-          <br/>
-        <h4> <span class="day-temperature">8°C </span>
-         </br>
-          1°C </h4>
-        </div>
-      </div>
-    </div>
-    <small><a href="https://github.com/Kinnix18/weather-project" target="_blank">Open-source code,</a> by Oksana Yanchuk </small>
+      <small
+        ><a href="https://github.com/Kinnix18/weather-project" target="_blank"
+          >Open-source code,</a
+        >
+        by Oksana Yanchuk
+      </small>
     </div>
     <script src="src/index.js"></script>
   </body>
